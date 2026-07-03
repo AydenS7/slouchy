@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slouchy — your Mac catches you slouching</title>
+<meta name="description" content="A tiny Mac menu bar app that checks your posture through the camera and calls you out when you slouch. $4.99 once.">
+<link rel="icon" href="logo.png">
+<style>
+  :root {
+    --coral: #F2705F;
+    --coral-dark: #DE5948;
+    --ink: #3A2340;
+    --cream: #FDF4ED;
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    font-family: ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 20px;
+    text-align: center;
+  }
+  main { max-width: 480px; }
+  .logo { width: 160px; height: 160px; }
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 8px 0 10px;
+  }
+  .tag { font-size: 20px; line-height: 1.45; margin-bottom: 28px; }
+  .btn {
+    display: inline-block;
+    background: var(--coral);
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 999px;
+    box-shadow: 0 6px 0 var(--coral-dark);
+    transition: transform .1s, box-shadow .1s;
+  }
+  .btn:hover { transform: translateY(2px); box-shadow: 0 4px 0 var(--coral-dark); }
+  .btn:active { transform: translateY(6px); box-shadow: 0 0 0 var(--coral-dark); }
+  .price { margin-top: 14px; font-size: 15px; opacity: .75; }
+  .how {
+    margin-top: 48px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 24px;
+  }
+  .how h2 { font-size: 16px; margin-bottom: 10px; }
+  .how ol { padding-left: 20px; }
+  .how li { margin-bottom: 8px; }
+  .how li:last-child { margin-bottom: 0; }
+  footer { margin-top: 36px; font-size: 13px; opacity: .55; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Slouchy logo — a little figure slouching">
+  <h1>slouchy</h1>
+  <p class="tag">A tiny menu bar app that checks your camera every few minutes and calls you out when you slouch.</p>
+
+  <a class="btn" href="https://github.com/AydenS7/slouchy/releases/latest/download/Slouchy.dmg">Download for Mac</a>
+  <p class="price">Free to download · $4.99 once to activate · Apple Silicon</p>
+
+  <div class="how">
+    <h2>Getting set up</h2>
+    <ol>
+      <li>Open the DMG and drag Slouchy into Applications.</li>
+      <li>First open: macOS says it "could not verify" Slouchy — click <strong>Done</strong>, then go to <strong>System Settings → Privacy &amp; Security</strong> and click <strong>Open Anyway</strong>. (One time only — Slouchy is a tiny indie app, not notarized by Apple.)</li>
+      <li>Slouchy appears in your menu bar and asks you to activate — pay $4.99 in your browser, paste in your key, allow the camera, done.</li>
+      <li>Sit tall. The turtle 🐢 is watching.</li>
+    </ol>
+  </div>
+
+  <footer>Everything runs on your Mac — snapshots never leave your machine.</footer>
+</main>
+</body>
+</html>
